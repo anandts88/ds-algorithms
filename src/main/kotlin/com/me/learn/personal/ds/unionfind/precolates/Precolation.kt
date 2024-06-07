@@ -1,4 +1,6 @@
-package com.me.learn.personal.ds.unionfind
+package com.me.learn.personal.ds.unionfind.precolates
+
+import com.me.learn.personal.ds.unionfind.weighted.WeightedQuickUnion
 
 /**
  * Precolaition means a 2D matrix. With a tap on top of matrix and drain on bottom of matrix.
