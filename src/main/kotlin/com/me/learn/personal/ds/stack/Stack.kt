@@ -26,7 +26,7 @@ class Stack<T>(
 
             val minIndex = (elements.size - 1) / 4
             if (pointer == minIndex) {
-                resize((elements.size - 1) / 4)
+                resize((elements.size - 1) / 2)
             }
 
             return element
