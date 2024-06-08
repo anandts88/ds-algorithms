@@ -1,41 +1,5 @@
 package com.me.learn.personal.ds.unionfind.quickfind
 
-/**
- * Solves dynamic connectivity problem
- * Lazy approach
- * Use array[N] data structure
- * Each element of the array contains the root of its index.
- * Thus forms a tree like structure.
- *
- * index:   0   1   2   3   4   5   6   7   8   9
- * parent:  0   1   2   3   4   5   6   7   8   9
- *
- * When union is performed for union(4, 3) then root of 3 is 3 and root of 4 is 4.
- * Connect root of 4 with root of 3
- * 3 is the parent of 4
- *
- *  index:   0   1   2   3   4   5   6   7   8   9
- *  parent:  0   1   2   3   3   5   6   7   8   9
- *
- *              3
- *             /
- *            4
- *
- *  When union is performed for union(3, 8) then root of 3 is 3 and root of 8 is 8.
- *  Connect root of 3 with root of 8
- *  8 is the parent of 3
- *
- *  index:   0   1   2   3   4   5   6   7   8   9
- *  parent:  0   1   2   8   3   5   6   7   8   9
- *
- *                 8
- *                /
- *               3
- *             /
- *            4
- *
- *  Too tall tree is the problem of QuickUnion. To avoid this go for Weighted Quick Union.
- */
 class QuickUnion(size: Int) {
     private val parents: IntArray
 
